@@ -67,7 +67,7 @@ const getinfo = async (e) => {
     } else {
         try {
             //!  weather API fatch here
-            let api = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal},in&appid=c2477f117a4ac7aa909ee9d72fd26e52`;
+            let api = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&appid=c2477f117a4ac7aa909ee9d72fd26e52`;
             let response = await fetch(api);
             const objedata = await response.json();
             const arrdata = [objedata];
