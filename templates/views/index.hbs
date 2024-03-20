@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+
+    {{>csslinks}}
+
+</head>
+
+<body>
+    <main class=" min-vh-100  px-sm-0   ">
+        {{>nav}}
+        <section class="container row d-flex align-items-center w-100 m-auto mt-5 mb-4">
+            <div class="banner-left col-md-6 col-12 pe-md-5  mb-3 order-md-1 order-2">
+                <p>welcome to weather app</p>
+                <h1 class=" mb-4">get the latest <span class="blue-text">weather</span>  info of your city</h1>
+                <a href="/weather" class="primary-btn text-decoration-none btn btn-bg-white border border-1 px-4 py-1 ">ckeck now</a>
+            </div>
+            <div class="banner-right col-md-6 col-12 order-md-2 order-1">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item min-h active">
+                            <img src="images/weather-mobile.svg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item min-h">
+                            <img src="images/weather-app.svg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item min-h">
+                            <img src="images/clock.svg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        {{>footer}}
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

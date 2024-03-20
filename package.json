@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "express": "^4.18.3",
+    "hbs": "^4.2.0",
+    "requests": "^0.3.0"
+  },
+  "name": "express-project",
+  "version": "1.0.0",
+  "description": "my express small website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rahul",
+  "license": "ISC"
+}
