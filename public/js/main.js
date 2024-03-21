@@ -5,6 +5,7 @@ const city_name = document.getElementById("city_name");
 const temp = document.getElementById("temp");
 const temp_status = document.getElementById("temp_status");
 const datahide =document.querySelector('.middel_layer')
+const weather_ =document.querySelector('#weather_')
 
 
 //todo date method 
@@ -75,7 +76,7 @@ const getinfo = async (e) => {
 
             //! all data print here
             city_name.innerText = `${cityVal}, ${arrdata[0].sys.country}`;
-            temp.innerText = arrdata[0].main.temp;
+            weather_.innerText = arrdata[0].main.temp;
             const tempMood = arrdata[0].weather[0].main;
             
             //! condition of weather ( clear, clouds & Rain)
